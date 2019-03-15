@@ -2,5 +2,8 @@
   "store": "Store",
   "newest": "newest",
   "category": "category",
-  "best_sellers": "best sellers"
+  "best_sellers": "best sellers",
+  "home": "home",
+  "news": "news",
+  "account": "account"
 }
