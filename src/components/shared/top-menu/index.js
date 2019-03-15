@@ -9,15 +9,15 @@ const TopMenu = props => {
       <View style={[styles.row, styles.tabs]}>
         <TouchableHighlight onPress={() => props.navigation.navigate()}>
           <View style={styles.button}>
-            <Image source={} style={styles.search}/>
+            {/*<Image source={} style={styles.search}/>*/}
           </View>
         </TouchableHighlight>
         <View style={styles.redTypeContainer}>
-          <Image source={redType} style={styles.redType}/>
+          {/*<Image source={redType} style={styles.redType}/>*/}
         </View>
         <TouchableHighlight onPress={() => props.navigation.navigate()}>
           <View style={styles.button}>
-            <Image source={} style={styles.hamburger}/>
+            {/*<Image source={} style={styles.hamburger}/>*/}
           </View>
         </TouchableHighlight>
       </View>
@@ -27,7 +27,7 @@ const TopMenu = props => {
 };
 
 TopMenu.propTypes = {
-  navigation: PropTypes.object.isRequired,
+  navigation: PropTypes.object,
 };
 
 export default TopMenu;

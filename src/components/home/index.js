@@ -6,6 +6,7 @@ import {HOME} from "../../routes/constants";
 import NavBar from "../../layout/nav-bar/index";
 import TopBar from "../shared/top-bar";
 import NoneHeader from '../shared/headers/none';
+import HomeHeader from "../shared/headers/home";
 
 class HomeScreen extends Component {
   constructor(props) {
@@ -13,18 +14,12 @@ class HomeScreen extends Component {
   }
 
   componentDidMount() {
-    // this.props.navigation.setParams({
-    //   navigation: this.props.navigation,
-    // })
+    this.props.navigation.setParams({
+      navigation: this.props.navigation,
+    })
   }
 
   static propTypes = {};
-
-  static navigationOptions = () => {
-    return {
-      header: null,
-    };
-  };
 
   render() {
     return (
@@ -39,6 +34,13 @@ class HomeScreen extends Component {
     );
   }
 }
+
+HomeScreen.navigationOptions = ({navigation}) => {
+  const {params = {}} = navigation.state;
+  return {
+    header: <HomeHeader navigation={params.navigation}/>,
+  };
+};
 
 HomeScreen.propTypes = {
   navigation: PropTypes.object.isRequired,

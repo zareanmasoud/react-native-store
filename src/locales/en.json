@@ -1,3 +1,6 @@
 {
-
+  "store": "Store",
+  "newest": "newest",
+  "category": "category",
+  "best_sellers": "best sellers"
 }
