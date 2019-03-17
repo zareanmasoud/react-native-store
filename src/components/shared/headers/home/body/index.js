@@ -26,7 +26,7 @@ class HeaderBody extends Component {
         <View style={styles.secondRow}>
           <View>
             <TouchableOpacity onPress={() => this.setSelected(NEWEST)}>
-              <View style={styles.buttonView}>
+              <View style={this.state.selected === NEWEST ? styles.selectedButtonView : styles.buttonView}>
                 {
                   this.state.selected === NEWEST ? (
                     <Text style={styles.selectedButtonTxt}>{_('newest')}</Text>
@@ -39,7 +39,7 @@ class HeaderBody extends Component {
           </View>
           <View>
             <TouchableOpacity onPress={() => this.setSelected(CATEGORY)}>
-              <View style={styles.buttonView}>
+              <View style={this.state.selected === CATEGORY ? styles.selectedButtonView : styles.buttonView}>
                 {
                   this.state.selected === CATEGORY ? (
                     <Text style={styles.selectedButtonTxt}>{_('category')}</Text>
@@ -52,7 +52,7 @@ class HeaderBody extends Component {
           </View>
           <View>
             <TouchableOpacity onPress={() => this.setSelected(BEST_SELLERS)}>
-              <View style={styles.buttonView}>
+              <View style={this.state.selected === BEST_SELLERS ? styles.selectedButtonView : styles.buttonView}>
                 {
                   this.state.selected === BEST_SELLERS ? (
                     <Text style={styles.selectedButtonTxt}>{_('best_sellers')}</Text>
