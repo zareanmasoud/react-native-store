@@ -7,6 +7,7 @@ import NavBar from "../../layout/nav-bar/index";
 import TopBar from "../shared/top-bar";
 import NoneHeader from '../shared/headers/none';
 import HomeHeader from "../shared/headers/home";
+import CategoryList from "./category-list";
 
 class HomeScreen extends Component {
   constructor(props) {
@@ -27,6 +28,7 @@ class HomeScreen extends Component {
         <TopBar barStyle={'dark-content'} backgroundColor={'#ffffff'} paddingTop={0}/>
         <View style={styles.bodyContainer}>
           <NavBar navigation={this.props.navigation} active={HOME} header={NoneHeader}>
+            <CategoryList/>
           </NavBar>
         </View>
 

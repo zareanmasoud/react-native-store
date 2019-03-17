@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-import {GRAY, IRANSANS, IRANSANS_BOLD, IRANSANS_MEDIUM, WHITE} from "../../../../../styles/theme";
+import {GRAY, IRANSANS, WHITE} from "../../../../../styles/theme";
 
 let row = {
   flexDirection: 'row',
