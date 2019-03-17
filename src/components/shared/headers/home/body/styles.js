@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-import {GRAY, IRANSANS, WHITE} from "../../../../../styles/theme";
+import {GRAY, IRANSANS, RED, WHITE} from "../../../../../styles/theme";
 
 let row = {
   flexDirection: 'row',
@@ -28,6 +28,11 @@ export default StyleSheet.create({
   },
   buttonView: {
     paddingVertical: 5,
+  },
+  selectedButtonView: {
+    paddingVertical: 5,
+    borderBottomWidth: 1,
+    color: WHITE,
   },
   selectedButtonTxt: {
     fontFamily: IRANSANS,

@@ -66,8 +66,4 @@ export default StyleSheet.create({
   tabs: {
     justifyContent: 'space-around',
   },
-  selected: {
-    borderBottomWidth: 2,
-    borderBottomColor: 'red',
-  },
 });
