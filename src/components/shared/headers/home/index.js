@@ -18,12 +18,12 @@ class HomeHeader extends Component {
         <View style={styles.firstRow}>
           <Text style={styles.title}>{_('store')}</Text>
           <View>
-            <Icon style={styles.cartIcon} name={'cart-plus'} size={20} color={'black'}/>
+            <Icon style={styles.cartIcon} name={'cart-plus'} size={25} color={'black'}/>
           </View>
         </View>
         <View style={styles.secondRow}>
           <View>
-            <TouchableOpacity onPress={() => {console.log('NEWEST', NEWEST); this.props.setSelected(NEWEST);}}>
+            <TouchableOpacity onPress={() => this.props.setSelected(NEWEST)}>
               <View style={this.props.selected === NEWEST ? styles.selectedButtonView : styles.buttonView}>
                 {
                   this.props.selected === NEWEST ? (

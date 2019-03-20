@@ -1,16 +1,23 @@
 import React from 'react';
 import {ScrollView, View, Text} from 'react-native';
-import options from './options.json';
-import Offer from './offer';
+import styles from './styles';
+import Offers from './offers';
+import JunkFoods from "./junk-foods";
+import ElectedStores from "./elected-stores";
+import PropTypes from 'prop-types';
 
-const Newest = () => {
+const Newest = props => {
   return(
-    <ScrollView>
-      {
-        options.offers.map((offer) => (<Offer key={offer.id} offer={offer}/>))
-      }
-    </ScrollView>
+    <View style={{flex: 1, marginBottom: 50,}}>
+      <Offers/>
+      <JunkFoods navigation={props.navigation}/>
+      <ElectedStores/>
+    </View>
   )
+};
+
+Newest.propTypes = {
+  navigation: PropTypes.object,
 };
 
 export default Newest;

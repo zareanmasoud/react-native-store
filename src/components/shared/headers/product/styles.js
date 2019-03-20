@@ -15,6 +15,15 @@ export default StyleSheet.create({
     paddingTop: 10,
     paddingStart: 20,
     paddingEnd: 10,
+    paddingBottom: 10,
+  },
+  backBasketView: {
+    flexDirection: 'row',
+  },
+  backBtnView: {
+    marginTop: 3,
+    paddingStart: 20,
+    paddingEnd: 5,
   },
   secondRow: {
     ...row,
@@ -25,11 +34,9 @@ export default StyleSheet.create({
   title: {
     fontFamily: IRANSANS,
     color: WHITE,
-    fontSize: 16,
   },
-  cartIcon: {
-    marginTop: 5,
-  },
+  cartIcon: {},
+  backIcon: {},
   buttonView: {
     paddingVertical: 5,
   },

@@ -10,6 +10,7 @@ import HomeHeader from "../shared/headers/home";
 import CategoryList from "./category-list";
 import {BEST_SELLERS, CATEGORIES, NEWEST} from "./constants";
 import Newest from './newest';
+import {RED} from "../../styles/theme";
 
 class HomeScreen extends Component {
   constructor(props) {
@@ -32,7 +33,7 @@ class HomeScreen extends Component {
       case CATEGORIES:
         return <CategoryList/>;
       case NEWEST:
-        return <Newest/>;
+        return <Newest navigation={this.props.navigation}/>;
       case BEST_SELLERS:
         return;
     }
@@ -41,7 +42,7 @@ class HomeScreen extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <TopBar barStyle={'dark-content'} backgroundColor={'#ffffff'} paddingTop={0}/>
+        <TopBar barStyle={'light-content'} backgroundColor={RED} paddingTop={0}/>
         <View style={styles.bodyContainer}>
           <NavBar navigation={this.props.navigation} active={HOME} header={NoneHeader}>
             <HomeHeader navigation={this.props.navigation} setSelected={this.setSelected} selected={this.state.selectedTab}/>
