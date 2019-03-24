@@ -10,7 +10,7 @@ export default StyleSheet.create({
   itemView: {
     marginVertical: 5,
     marginHorizontal: 20,
-    height: 150,
+    height: 120,
   },
   itemImgBack: {
     resizeMode: 'cover',
@@ -28,6 +28,7 @@ export default StyleSheet.create({
     fontFamily: IRANSANS_BOLD,
     fontSize: 20,
     color: WHITE,
+    paddingVertical: 10,
   },
   descTxt: {
     fontFamily: IRANSANS,

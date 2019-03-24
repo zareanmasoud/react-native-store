@@ -8,3 +8,7 @@ export const IRANSANS_FANUM = 'IRANSansMobile(FaNum)';
 export const IRANSANS_FANUM_MEDIUM = 'IRANSansMobileFaNumMedium';
 export const IRANSANS_FANUM_BOLD = 'IRANSansMobileFaNumBold';
 export const TRANSPARENT_BLACK = '#00000088';
+export const GREEN_FONT = '#4B9F71';
+export const GRAY_FONT = '#A3A3A3';
+export const GREEN_SUBMIT = '#4CAE54';
+export const RED_FONT = '#BB5549';

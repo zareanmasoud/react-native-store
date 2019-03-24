@@ -10,6 +10,7 @@ export default StyleSheet.create({
   },
   bodyContainer: {
     marginBottom: 30,
+    flex: 1,
     // flex: .8,
   },
   footer: {

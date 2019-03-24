@@ -1,17 +1,29 @@
 import {StyleSheet} from 'react-native';
-import {GRAY, IRANSANS, RED, WHITE} from "../../../../../styles/theme";
+import {GRAY, IRANSANS, RED, WHITE} from "../../../../styles/theme";
 
 let row = {
   flexDirection: 'row',
 };
 
 export default StyleSheet.create({
+  header: {
+    backgroundColor: RED,
+  },
   firstRow: {
     ...row,
     justifyContent: 'space-between',
     paddingTop: 10,
     paddingStart: 20,
     paddingEnd: 10,
+    paddingBottom: 10,
+  },
+  backBasketView: {
+    flexDirection: 'row',
+  },
+  backBtnView: {
+    marginTop: 3,
+    paddingStart: 20,
+    paddingEnd: 5,
   },
   secondRow: {
     ...row,
@@ -23,9 +35,8 @@ export default StyleSheet.create({
     fontFamily: IRANSANS,
     color: WHITE,
   },
-  cartIcon: {
-
-  },
+  cartIcon: {},
+  backIcon: {},
   buttonView: {
     paddingVertical: 5,
   },
@@ -44,4 +55,4 @@ export default StyleSheet.create({
     fontSize: 10,
     color: GRAY,
   },
-})
+});

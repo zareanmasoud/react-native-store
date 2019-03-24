@@ -17,15 +17,15 @@ export default StyleSheet.create({
   },
   footer: {
     ...navPlacement,
-    bottom: 0,
+    bottom: -40,
   },
   scrollView: {
-    height: '103%',
+    height: '100%',
   },
   scrollItem: {
-    height: '103%',
+    height: '100%',
   },
   text: {
-    marginBottom: 60,
+    // marginBottom: 60,
   },
 });
