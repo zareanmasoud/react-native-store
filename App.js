@@ -11,19 +11,26 @@ import {Provider} from 'react-redux';
 import Navigator from './src/routes/navigator';
 import store from './src/store/configure-store';
 import {I18nManager} from 'react-native';
+import RNRestart from 'react-native-restart';
 
 type Props = {};
 export default class App extends Component<Props> {
-    constructor(props) {
-        super(props);
-        I18nManager.forceRTL(true);
-    }
+  constructor(props) {
+    super(props);
+  }
 
-    render() {
-        return (
-            <Provider store={store}>
-                <Navigator/>
-            </Provider>
-        );
+  componentDidMount() {
+    if (!I18nManager.isRTL) {
+      I18nManager.forceRTL(true);
+      RNRestart.Restart();
     }
+  }
+
+  render() {
+    return (
+      <Provider store={store}>
+        <Navigator/>
+      </Provider>
+    );
+  }
 }
