@@ -106,7 +106,7 @@ def getPassword(String currentUser, String keyChain) {
       stdout.toString().trim()
 }
 
-def pass = getPassword("zareanmasoud","android_rn_store_keystore")
+//def pass = getPassword("zareanmasoud","android_rn_store_keystore")
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
@@ -122,6 +122,9 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
+        ndk {
+          abiFilters "armeabi-v7a", "x86"
+        }
     }
     splits {
         abi {
@@ -134,9 +137,9 @@ android {
     signingConfigs {
         release {
             storeFile file(MYAPP_RELEASE_STORE_FILE)
-            storePassword pass
+            storePassword "Store:1552"
             keyAlias MYAPP_RELEASE_KEY_ALIAS
-            keyPassword pass
+            keyPassword "Store:1552"
         }
     }
     buildTypes {
